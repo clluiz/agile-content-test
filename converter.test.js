@@ -1,4 +1,3 @@
-const converter = require('./converter');
 const MinhaCDNRecord = require('./record');
 
 test('time taken equal .5 must be rounded to upper integer', () => {

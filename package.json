@@ -2,7 +2,9 @@
   "name": "test-agile-content",
   "version": "1.0.0",
   "main": "index.js",
+  "bin": "index.js",
   "license": "MIT",
+  "author": "Cleiton Luiz Rocha Teodoro",
   "scripts": {
     "test": "jest",
     "start": "nodemon index.js"
