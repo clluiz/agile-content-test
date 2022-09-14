@@ -32,7 +32,7 @@ request.get(sourceUrl, response => {
     console.info(`INFO: ${folderName} folder already exists. Skipping folder creation.`);
   }
 
-  const agoraLogWriter = fs.createWriteStream(path.join(__dirname, folderName, filename), { flags: 'w', encoding: 'utf-8' });
+  const agoraLogWriter = fs.createWriteStream(path.resolve(process.cwd(), folderName, filename), { flags: 'w', encoding: 'utf-8' });
     
   const today = new Date();
   agoraLogWriter.write("#Version: 1.0\n");

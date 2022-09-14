@@ -7,11 +7,15 @@
   "author": "Cleiton Luiz Rocha Teodoro",
   "scripts": {
     "test": "jest",
+    "build:linux": "pkg . --output=convert --targets=linux",
+    "build:macos": "pkg . --output=convert --targets=macos",
+    "build:win": "pkg . --output=convert --targets=win",
     "start": "nodemon index.js"
   },
   "devDependencies": {
     "jest": "29.0.3",
-    "nodemon": "2.0.19"
+    "nodemon": "2.0.19",
+    "pkg": "5.8.0"
   },
   "dependencies": {
     "byline": "^5.0.0",
