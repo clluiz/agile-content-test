@@ -5,6 +5,10 @@
   "bin": "index.js",
   "license": "MIT",
   "author": "Cleiton Luiz Rocha Teodoro",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/clluiz/agile-content-test"
+  },
   "scripts": {
     "test": "jest",
     "build:linux": "pkg . --output=convert --targets=linux",
